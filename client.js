@@ -120,6 +120,12 @@ console.log(toggled);
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
 
+let numbersArray = [1, 3, 6, 0, 2, 4, 0, 0];
+console.log(numbersArray);
+while (numbersArray[numbersArray.length - 1] === 0) {
+     numbersArray.pop();
+}
+console.log(numbersArray);
 
 /**
  * #6 (STRETCH) Highest & Lowest
@@ -136,3 +142,21 @@ console.log(toggled);
 // 2, 2, -3, 7, 4, 1, 7, 12, 8
 // High: 12
 // Low: -3
+
+let largeArray = [3, 6, 8, 2, 4, 9, 10, 14, 12, -1]
+let high = 0;
+let low = 0;
+
+for(let number of largeArray) {
+     if ( number > high ) {
+          high = number;
+     } else if (number < low){
+          low = number; 
+     }
+     
+}
+
+console.log(high);
+console.log(low);
+
+
