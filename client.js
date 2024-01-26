@@ -7,6 +7,11 @@
  *    hobbies
  */
 
+let groupHobbies = ['guitar', 'reading', 'video games', 'biking'];
+for (let hobby of groupHobbies) {
+     console.log(hobby);
+}
+console.log('Total hobbies:', groupHobbies.length);
 
 // Example output
 // 1. swimming
@@ -24,7 +29,15 @@
  *    is in the array
  * 4. Output the array and number of times teal was found
  */
-
+let colors = ['blue', 'green', 'pink', 'teal', 'teal']
+let tealCount = 0;
+for (let color of colors ){
+     if (color === 'teal'){
+          tealCount++;
+     } 
+}
+console.log(colors);
+console.log('Number of times teal was found:', tealCount);
 
 // Example output
 // green, red, teal, orange, teal
@@ -47,6 +60,22 @@
 // Odd 3, 7, 11
 // Even 2, 8, 4, 2
 
+let numbers = [1, 2, 3, 4, 5];
+let oddNumbers = [];
+let evenNumbers = []; 
+for (let number of numbers) {
+     if (number % 2) {
+          oddNumbers.push(number)
+     } else {
+          evenNumbers.push(number)
+     }
+}
+console.log(numbers);
+ console.log(evenNumbers);
+ console.log(oddNumbers);
+
+      
+
 
 /**
  * #4 Flipping Switches
@@ -62,6 +91,17 @@
 // true, false, true, true
 // Toggled false, true, false, false
 
+let booleans = [true, false, true, true, false];
+let toggled = [];
+for (let boolean of booleans) {
+     if (boolean === true) {
+          toggled.push(false);
+     } else {
+          toggled.push(true);
+     }
+}
+console.log(booleans);
+console.log(toggled);
 
 /**
  * #5 (STRETCH) Remove 0's
